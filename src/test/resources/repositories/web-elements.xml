@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns="http://chameleon.ibs-qa.ru/schema/web-elements">
+    <Page name="Весь контекст">
+        <Page name="Меню">
+            <Link name="Песочница"/>
+            <Link name="Сброс данных" isLoaded="true"/>
+        </Page>
+        <Page name="Песочница">
+            <Link name="Сброс данных" isLoaded="true"/>
+        </Page>
+        <Page name="Форма Добавления">
+            <TextInput name="Наименование"/>
+            <ComboBox name="Тип"/>
+            <CheckBox name="Экзотический"/>
+            <Button name="Сохранить" isLoaded="true"/>
+        </Page>
+        <Page name="Главная Страница">
+            <Button name="Добавить"/>
+            <Collection name="Таблица" locator=".//table/tbody/tr">
+                <StaticText name="Наименование" locator=".//td[1]"/>
+                <StaticText name="Тип" locator=".//td[2]"/>
+                <StaticText name="Экзотический" locator=".//td[3]"/>
+            </Collection>
+            <Block name="Меню">
+                <Link name="Песочница"/>
+                <Link name="Сброс данных" isLoaded="true"/>
+            </Block>
+        </Page>
+    </Page>
+</Pages>
